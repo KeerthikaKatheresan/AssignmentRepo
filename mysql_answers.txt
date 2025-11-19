@@ -1,6 +1,7 @@
 1. INSERT INTO customers (customerNumber, customerName, contactLastName, contactFirstName, phone, addressLine1, city, country, creditLimit) VALUES (5001, 'Pranay Traders', 'Reddy', 'Pranay', '9876543210', 'Madhapur', 'Hyderabad', 'India', 60000);
 2. UPDATE customers SET creditLimit = creditLimit * 1.10 WHERE country = 'Germany';
-3. DELETE FROM orders WHERE orderDate < '2005-01-01';
+3. delete from orderdetails where orderNumber In(select orderNumber from orders where orderdate<'2005-01-01');
+delete from orders where orderdate<'2005-01-01';
 4. INSERT INTO products (productCode, productName, productLine, productScale, productVendor, productDescription, quantityInStock, buyPrice, MSRP) VALUES ('S99_9999', 'Vintage Car Model', 'Classic Cars', '1:18', 'Auto Models Ltd.', 'High-quality car model', 100, 50.00, 95.00);
 5. INSERT INTO payments (customerNumber, checkNumber, paymentDate, amount) VALUES (103, 'CHK5001', '2025-01-01', 1500);
 6. UPDATE offices SET phone = '+44 20-9999-8888' WHERE city = 'London';
