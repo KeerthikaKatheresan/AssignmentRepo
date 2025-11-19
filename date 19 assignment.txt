@@ -1,0 +1,12 @@
+1.INSERT INTO CUSTOMERS (customerNumber,customerName,contactLastName,contactFirstName,phone,addressLine1,city,country) VALUE (2004,'Keerthi','Kadhiresan','Keerthika','6367898654','56,Ak nagar,Thanjavur','Thanjavur','India');
+
+2.UPDATE CUSTOMERS SET CREDITLIMIT=creditlimit+CREDITLIMIT*(10/100) WHERE COUNTRY='Germany'; 
+
+3.delete from orderdetails where orderNumber In(select orderNumber from orders where orderdate<'2005-01-01');
+delete from orders where orderdate<'2005-01-01';
+
+4.select * from products;
+insert into products(productCode, productName, productLine, productScale, productVendor, productDescription, quantityInStock, buyPrice, MSRP)values('S119_1678', '1969 Harley Davidson Ultimate Chopper', 'Classic Cars', '1:11', 'Min  Diecast', 'This replica features working kickstand, front suspension, gear-shift lever, footbrake lever, drive chain, wheels and steering. All parts are particularly delicate due to their precise scale and require special care and attention.', '7933', '48.81', '95.70'
+);
+
+5.
