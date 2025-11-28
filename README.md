@@ -1,2 +1,2 @@
 # AssignmentRepo
-This contains the answers for th eassignment given
+This contains the answers for the assignment given
